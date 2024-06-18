@@ -1,7 +1,7 @@
 const { Sequelize } = require("sequelize");
 
 const sequelize = new Sequelize("itgid-node-app", "root", "", {
-  host: "dimaparfenyk.github.io/itgid-node-project/",
+  host: "localhost",
   dialect: "mysql",
   logging: false,
 });
