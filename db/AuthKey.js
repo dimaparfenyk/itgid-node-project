@@ -8,7 +8,7 @@ module.exports = function (sequelize) {
         type: DataTypes.STRING(44),
         primaryKey: true,
       },
-      id: {
+      userid: {
         type: DataTypes.INTEGER(),
         autoIncrement: true,
       },

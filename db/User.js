@@ -19,12 +19,12 @@ module.exports = function (sequelize) {
         allowNull: false, // для предотвращения пустых значений
       },
       created_at: {
-        type: DataTypes.DATE,
-        defaultValue: Sequelize.NOW, // Используется текущая дата и время
+        type: Sequelize.INTEGER(),
+        defaultValue: Math.floor(Date.now() / 1000), // Используется текущая дата и время
       },
       updated_at: {
-        type: DataTypes.DATE,
-        defaultValue: Sequelize.NOW, // Используется текущая дата и время
+        type: Sequelize.INTEGER(),
+        defaultValue: Math.floor(Date.now() / 1000), // Используется текущая дата и время
       },
     },
     {

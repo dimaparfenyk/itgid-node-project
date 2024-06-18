@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { mimeTypes } = require("./mime");
+const mimeTypes = require("./mime");
 
 module.exports = function (res, filePath, ext) {
   res.setHeader("Content-Type", mimeTypes[ext]);
